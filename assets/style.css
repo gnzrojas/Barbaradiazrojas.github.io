@@ -1,37 +1,163 @@
-body{
+body {
   font-family: 'Rubik', sans-serif;
-}
-.logo {
-  width: 200px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul li a:hover{
-  transform: scale(1.25);
-  transition: 0.5s;
+/* Estilos del navbar */
+.navbar {
+  padding: 1rem 0;
 }
-#hero{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./img/bg-hero2.0.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.navbar-brand img {
+  width: 100px;
+  height: auto;
 }
-#hero h1{
+
+.nav-link {
+  font-size: 1.2rem;
   color: #ffffff;
-  font-size: 4rem;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Sección Hero */
+#hero {
+  background: url('./img/bg-hero2.0.jpg') no-repeat center center/cover;
+  color: white;
   text-align: center;
-  font-weight: 400;    
+  padding: 150px 20px;
 }
-#about .avatar{
-  width: 300px;
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#hero .btn {
+  font-size: 1.2rem;
+}
+
+/* Estilo de la sección Sobre mí */
+#about {
+  padding: 50px 0;
+}
+
+#about h2 {
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+#about .avatar {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
 }
-.card img:hover{
-  transform: scale(1.05);
-  transition: 0.5s;
+
+#about .btn-group .btn {
+  margin-top: 20px;
+}
+
+/* Progreso de habilidades */
+.progress {
+  height: 25px;
+}
+
+.progress-bar {
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* Estilos de la sección Experiencia */
+#experiencia {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+#experiencia .rafariass-title {
+  border-bottom: 2px solid #007bff;
+  margin-bottom: 40px;
+}
+
+#experiencia .card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden; /* Evita que los elementos salgan del contenedor */
+}
+
+#experiencia .img-branch {
+  width: 80px;
+  height: auto;
+  object-fit: contain; /* Asegura que los logos mantengan sus proporciones */
+  margin-right: 20px;
+}
+
+#experiencia .card-body {
+  flex: 1;
+  word-wrap: break-word; /* Evita que el texto largo se salga del contenedor */
+}
+
+#experiencia .card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#experiencia .card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Estilos generales */
+.text-center {
+  text-align: center;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h2, h3, h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  /* Alineación responsiva para las tarjetas en Experiencia */
+  #experiencia .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #experiencia .card .img-branch {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  .progress-bar {
+    font-size: 0.9rem;
+  }
 }
