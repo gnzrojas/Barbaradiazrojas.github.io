@@ -161,3 +161,26 @@ p {
     font-size: 0.9rem;
   }
 }
+#Footer {
+  background-color: #343a40; /* Color de fondo oscuro */
+  padding: 1rem; /* Espaciado interno */
+  margin-top: 2rem; /* Espaciado superior para separación con el body */
+}
+
+#Footer .container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+  text-align: center; /* Alinear el texto al centro */
+}
+
+#Footer .text-light {
+  color: #ffffff; /* Color de texto blanco */
+  font-size: 1rem; /* Tamaño de fuente */
+  font-family: Arial, sans-serif; /* Tipo de letra */
+}
+
+@media (max-width: 768px) {
+  #Footer .text-light {
+      font-size: 0.9rem; /* Tamaño de fuente para pantallas pequeñas */
+  }
+}
