@@ -51,13 +51,19 @@ body {
   margin-bottom: 40px;
 }
 
+.avatar {
+  width: 75%;
+  border-radius: 75%;
+}
+
+/*
 #about .avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
 }
-
+*/
 #about .btn-group .btn {
   margin-top: 20px;
 }
